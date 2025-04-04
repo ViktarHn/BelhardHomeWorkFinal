@@ -1,0 +1,6 @@
+*.log
+plots/
+results/
+processed_data/
+*.pkl
+__pycache__/

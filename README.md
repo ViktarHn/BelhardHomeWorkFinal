@@ -29,7 +29,7 @@
    - **Вывод**: Результаты кластеризации, средний Silhouette Score.
 
 5. **`time_series.py`**
-   - **Описание**: Прогнозирует временные ряды FDI для выбранной страны с использованием 5 методов (ARIMA, Prophet, RandomForest, LSTM, ExponentialSmoothing) и ансамбля через взвешенное среднее.
+   - **Описание**: Прогнозирует временные ряды FDI для выбранной страны с использованием 5 методов (ARIMA, Prophet, RandomForest, ExponentialSmoothing) и ансамбля через взвешенное среднее.
    - **Выход**: Интерактивный график прогноза (`plots/forecast_{country}.html`).
    - **Вывод**: Метрики качества (MAE) для каждой модели и ансамбля.
 
@@ -43,11 +43,20 @@
    - **Выход**: График важности (`feature_importance_results.png`).
    - **Вывод**: Таблица важности признаков.
 
+### Дополнительные файлы
+
+8. **`investment_trends.py`**  
+   - **Описание**: График инвестиций для Германии, Швеции, Италии, Испании, Франции за 10 лет.  
+   - **Выход**: `investment_trends.html`.  
+
+9. **`europe_vs_special.py`**  
+   - **Описание**: Сравнение средних инвестиций Европы и Кипра, Люксембурга, Мальты.  
+   - **Выход**: `europe_vs_special.html`.
 ## Установка
 
 Для запуска проекта установите необходимые библиотеки:
 ```bash
-pip install pandas numpy matplotlib seaborn plotly sklearn statsmodels prophet pmdarima tensorflow pyyaml tqdm scipy
+pip install pandas numpy plotly sklearn statsmodels prophet pmdarima pyyaml scipy
 ```
 
 ## Использование
@@ -64,6 +73,8 @@ jupyter notebook
 `time_series.py`
 `anomaly_detection.py`
 `feature_importance.py`
+`investment_trends.py`
+`europe_vs_special.py`
 
 4. Запустите каждую ячейку. Результаты отобразятся в ноутбуке и сохранятся в папках plots/, results/, processed_data/.
 
@@ -95,8 +106,12 @@ jupyter notebook
 
 *Важность признаков:* Оценка влияния признаков на FDI.
 
+**Git-репозиторий**
+
+Проект размещен на GitHub: https://github.com/ViktarHn/BelhardHomeWorkFinal.
+
 **Лицензия**
-Этот проект распространяется под лицензией MIT. См. файл LICENSE для подробностей.
+Этот проект распространяется под лицензией MIT. См. файл `LICENSE` для подробностей.
 
 **Автор**
 
